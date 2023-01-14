@@ -26,10 +26,10 @@ jobs:
           npm run build
       - name: Deploy 🚀
         uses: cloudflare/pages-action@v1
-          with:
-            apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-            accountId: 4f673abf46d895bedae9d689ba5f4535
-            projectName: homepage
-            directory: build
-            # Optional: Enable this if you want to have GitHub Deployments triggered
-            gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: 4f673abf46d895bedae9d689ba5f4535
+          projectName: homepage
+          directory: build
+          # Optional: Enable this if you want to have GitHub Deployments triggered
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
