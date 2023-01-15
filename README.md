@@ -1,6 +1,6 @@
 # Personal Website
 
-My personal website powered by [developerFolio](https://github.com/saadpasta/developerFolio) theme.
+My personal website based on [developerFolio](https://github.com/saadpasta/developerFolio) and [masterPortfolio](https://github.com/ashutosh1919/masterPortfolio).
 
 ## How To Use
 

@@ -40,9 +40,17 @@
   color: $textColor !important;
 }
 
+.greeting-nickname {
+  color: $textColor !important;
+  font-size: 30px;
+  line-height: 0px;
+  font-family: "Noto Serif TC", serif;
+}
+
 .greeting-text-p {
   font-size: 30px;
   line-height: 40px;
+  font-weight: 500 !important;
 }
 
 .greeting-image-div > img {

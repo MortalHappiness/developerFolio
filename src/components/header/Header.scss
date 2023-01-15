@@ -51,6 +51,7 @@
 }
 
 .header .logo {
+  color: $textColor;
   display: block;
   flex: none;
   float: left;
@@ -58,6 +59,10 @@
   text-decoration: none;
   margin-top: 10px;
   line-height: normal;
+}
+
+.dark-menu .logo {
+  color: $textColorDark !important;
 }
 
 .header .logo-name {

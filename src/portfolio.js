@@ -12,6 +12,7 @@ import {FaSass, FaDatabase} from "react-icons/fa";
 import {
   SiAmazonaws,
   SiAssemblyscript,
+  SiCloudflare,
   SiCplusplus,
   SiCss3,
   SiDocker,
@@ -22,6 +23,7 @@ import {
   SiGit,
   SiGnubash,
   SiGo,
+  SiGoogleanalytics,
   SiGooglecloud,
   SiGraphql,
   SiHtml5,
@@ -62,8 +64,9 @@ const illustration = {
 const greeting = {
   username: "Chi-Sheng Liu",
   title: "Hi, I'm Chi-Sheng Liu",
+  nickname: "劉奇聖",
   subTitle:
-    "I am an enthusiastic developer who is constantly striving to expand my knowledge and skillset through new technologies and tools. My educational background and experience encompasses a diverse range of subjects such as web development, distributed systems, blockchain, machine learning, and computer security, among others.",
+    "An enthusiastic developer who is constantly striving to expand knowledge and skillset through new technologies and tools. My educational background and experience encompasses a diverse range of subjects such as web development, distributed systems, blockchain, machine learning, and computer security, among others.",
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -89,11 +92,13 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY GEEK WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji("⚡ Build full-stack web applications"),
-    emoji("⚡ Develop cloud-related components such as Kubernetes operators"),
-    emoji("⚡ Performing DevOps tasks, such as setting up CI/CD"),
+    emoji("⚡ Build full-stack web applications."),
+    emoji("⚡ Develop cloud-related components such as Kubernetes operators."),
     emoji(
-      "⚡ Fan of Linux and Vim who loves to customize my computer and text editor"
+      "⚡ Performing DevOps tasks, such as setting up CI/CD, reverse proxy, and DNS."
+    ),
+    emoji(
+      "⚡ Fan of Linux and Vim who loves to customize my computer and text editor."
     )
   ],
 
@@ -207,6 +212,14 @@ https://devicon.dev/ */
       icon: <SiPrisma />
     },
     {
+      skillName: "Google Analytics",
+      icon: <SiGoogleanalytics />
+    },
+    {
+      skillName: "Cloudflare",
+      icon: <SiCloudflare />
+    },
+    {
       skillName: "Nginx",
       icon: <SiNginx />
     },
@@ -274,14 +287,14 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend",
-      progressPercentage: "80%"
+      progressPercentage: "85%"
     },
     {
       Stack: "Backend",
       progressPercentage: "95%"
     },
     {
-      Stack: "Cloud",
+      Stack: "DevOps",
       progressPercentage: "90%"
     },
     {
@@ -370,9 +383,9 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  title: emoji("Achievements And Certifications"),
+  //subtitle:
+  //  "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {
@@ -396,13 +409,25 @@ const achievementSection = {
       title: "Kubernetes Certified Application Developer (CKAD) with Tests",
       subtitle:
         'Certificate of completion for the Udemy course "Kubernetes Certified Application Developer (CKAD) with Tests"',
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/e/e3/Udemy_logo.svg",
-      imageAlt: "Udemy Logo",
+      image: require("./assets/images/kubernetes_logo.svg"),
+      imageAlt: "Kubernetes Logo",
       footerLink: [
         {
           name: "Certificate",
           url: "https://www.udemy.com/certificate/UC-43afbaf5-4b50-4d7c-8f07-434b8fd2677f/"
+        }
+      ]
+    },
+    {
+      title: "Java - ambitious start. Create a real web app!",
+      subtitle:
+        'Certificate of completion for the Udemy course "Java - ambitious start. Create a real web app!"',
+      image: require("./assets/images/java_logo.svg"),
+      imageAlt: "Java Logo",
+      footerLink: [
+        {
+          name: "Certificate",
+          url: "https://www.udemy.com/certificate/UC-f4a46207-8f46-4677-bf49-d885de27e261/"
         }
       ]
     }
