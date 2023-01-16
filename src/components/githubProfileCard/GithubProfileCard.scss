@@ -47,6 +47,17 @@
 .bio-text {
   line-height: 30px;
   font-size: 22px;
+  font-weight: 500;
+}
+
+.bio-text-link {
+  font-weight: 700;
+  color: $textColor;
+  text-decoration: none;
+}
+
+.bio-text-link:hover {
+  text-decoration: underline;
 }
 
 .desc-prof {

@@ -2,8 +2,32 @@ import React from "react";
 import "./GithubProfileCard.scss";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import {contactInfo, isHireable} from "../../portfolio";
-import emoji from "react-easy-emoji";
 import {Fade} from "react-reveal";
+
+function parseGithubTags(text) {
+  if (!text) return null;
+  const ret = [];
+  const matches = text.matchAll(/@[a-z\d](?:[a-z\d]|-(?=[a-z\d])){0,38}/gi);
+  let curIdx = 0;
+  for (let match of matches) {
+    if (match.index > curIdx) ret.push(text.substring(curIdx, match.index));
+
+    ret.push(
+      <a
+        key={match.index}
+        className="bio-text-link"
+        href={`https://github.com/${match[0].substring(1)}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        {match[0]}
+      </a>
+    );
+    curIdx = match.index + match[0].length;
+  }
+  if (curIdx < text.length) ret.push(text.substring(curIdx));
+  return ret;
+}
 
 export default function GithubProfileCard({prof}) {
   if (isHireable) {
@@ -20,7 +44,7 @@ export default function GithubProfileCard({prof}) {
             <div className="blog-header">
               <p className="subTitle blog-subtitle">{contactInfo.subtitle}</p>
             </div>
-            <h2 className="bio-text">"{emoji(String(prof.bio))}"</h2>
+            <h2 className="bio-text">"{parseGithubTags(prof.bio)}"</h2>
             {prof.location !== null && (
               <div className="location-div">
                 <span className="desc-prof">

@@ -5,6 +5,16 @@
   color: $subTitle !important;
 }
 
+.footer-text a {
+  font-weight: 700;
+  text-decoration: none;
+  color: $subTitle;
+}
+
+.footer-text a:hover {
+  text-decoration: underline;
+}
+
 .dark-mode {
   color: $textColorDark !important;
 }
