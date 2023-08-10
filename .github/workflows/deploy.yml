@@ -14,13 +14,18 @@ on:
   workflow_dispatch:
 jobs:
   build-and-deploy:
-    runs-on: node:16
+    runs-on: ubuntu-latest
     permissions:
       contents: read
       deployments: write
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Check NodeJS version
+        run: node -v
       - name: Install and Build 🔧 # Build the Project
         run: |
           npm install
