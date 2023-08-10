@@ -68,7 +68,7 @@ const greeting = {
   subTitle:
     "An enthusiastic developer who is constantly striving to expand knowledge and skillset through new technologies and tools. My educational background and experience encompasses a diverse range of subjects such as web development, distributed systems, cloud computing, blockchain, machine learning, and computer security, among others.",
   resumeLink:
-    "https://drive.google.com/drive/folders/1Kag509dGhroIhZe3NNMS4i6aWfAGZvms?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1bx95BG5OVDbS0Xe2Pouf7iVaTFvFX57c/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
