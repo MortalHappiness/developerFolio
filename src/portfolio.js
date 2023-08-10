@@ -67,7 +67,8 @@ const greeting = {
   nickname: "劉奇聖",
   subTitle:
     "An enthusiastic developer who is constantly striving to expand knowledge and skillset through new technologies and tools. My educational background and experience encompasses a diverse range of subjects such as web development, distributed systems, cloud computing, blockchain, machine learning, and computer security, among others.",
-  resumeLink: "", // Set to empty to hide the button
+  resumeLink:
+    "https://drive.google.com/drive/folders/1Kag509dGhroIhZe3NNMS4i6aWfAGZvms?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
