@@ -5,6 +5,8 @@ import {Fade} from "react-reveal";
 import Build from "../../assets/lottie/build";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
+import skillSvg from "../../assets/images/skill.svg";
+
 export default function StackProgress() {
   if (techStack.viewSkillBars) {
     return (
@@ -31,10 +33,7 @@ export default function StackProgress() {
             {illustration.animated ? (
               <DisplayLottie animationData={Build} />
             ) : (
-              <img
-                alt="Skills"
-                src={require("../../assets/images/skill.svg")}
-              />
+              <img alt="Skills" src={skillSvg} />
             )}
           </div>
         </div>

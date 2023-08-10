@@ -7,7 +7,7 @@ import React from "react";
 import emoji from "react-easy-emoji";
 import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your file name for custom animation
 
-import {FaSass, FaDatabase} from "react-icons/fa";
+import {FaSass, FaDatabase, FaJava} from "react-icons/fa";
 
 import {
   SiAmazonaws,
@@ -27,7 +27,6 @@ import {
   SiGooglecloud,
   SiGraphql,
   SiHtml5,
-  SiJava,
   SiJavascript,
   SiKubernetes,
   SiLinux,
@@ -66,7 +65,7 @@ const greeting = {
   title: "Hi, I'm Chi-Sheng Liu",
   nickname: "劉奇聖",
   subTitle:
-    "An enthusiastic developer who is constantly striving to expand knowledge and skillset through new technologies and tools. My educational background and experience encompasses a diverse range of subjects such as web development, distributed systems, blockchain, machine learning, and computer security, among others.",
+    "An enthusiastic developer who is constantly striving to expand knowledge and skillset through new technologies and tools. My educational background and experience encompasses a diverse range of subjects such as web development, distributed systems, cloud computing, blockchain, machine learning, and computer security, among others.",
   resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
@@ -125,7 +124,7 @@ https://devicon.dev/ */
     },
     {
       skillName: "Java",
-      icon: <SiJava />
+      icon: <FaJava />
     },
     {
       skillName: "Bash",
@@ -409,7 +408,7 @@ const achievementSection = {
       title: "Kubernetes Certified Application Developer (CKAD) with Tests",
       subtitle:
         'Certificate of completion for the Udemy course "Kubernetes Certified Application Developer (CKAD) with Tests"',
-      image: require("./assets/images/kubernetes_logo.svg"),
+      image: require("./assets/images/kubernetes_logo.png"),
       imageAlt: "Kubernetes Logo",
       footerLink: [
         {
@@ -422,7 +421,7 @@ const achievementSection = {
       title: "Java - ambitious start. Create a real web app!",
       subtitle:
         'Certificate of completion for the Udemy course "Java - ambitious start. Create a real web app!"',
-      image: require("./assets/images/java_logo.svg"),
+      image: require("./assets/images/java_logo.png"),
       imageAlt: "Java Logo",
       footerLink: [
         {

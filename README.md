@@ -2,6 +2,10 @@
 
 My personal website based on [developerFolio](https://github.com/saadpasta/developerFolio) and [masterPortfolio](https://github.com/ashutosh1919/masterPortfolio).
 
+## Prerequisites
+
+- NodeJS 16
+
 ## How To Use
 
 ```bash
