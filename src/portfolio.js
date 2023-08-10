@@ -39,6 +39,7 @@ import {
   SiReact,
   SiRedis,
   SiRedux,
+  SiRust,
   SiSolidity,
   SiTypescript,
   SiVim
@@ -125,6 +126,10 @@ https://devicon.dev/ */
     {
       skillName: "Java",
       icon: <FaJava />
+    },
+    {
+      skillName: "Rust",
+      icon: <SiRust />
     },
     {
       skillName: "Bash",
