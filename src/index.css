@@ -2,7 +2,8 @@
   font-family: "Agustina Regular";
   font-style: normal;
   font-weight: normal;
-  src: local("Agustina Regular"),
+  src:
+    local("Agustina Regular"),
     url("./assets/fonts/Agustina.woff") format("woff");
   font-display: swap;
 }
@@ -16,7 +17,9 @@ body {
 }
 body {
   margin: 0;
-  font: 19px / 23px "Noto Sans", sans-serif;
+  font:
+    19px / 23px "Noto Sans",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
