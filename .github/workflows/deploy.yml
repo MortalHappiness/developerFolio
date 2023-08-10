@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: node:16
     permissions:
       contents: read
       deployments: write
