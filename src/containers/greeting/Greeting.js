@@ -9,7 +9,7 @@ import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
 
-import manOnTableSvg from "../../assets/images/manOnTable.svg";
+import profileImage from "../../assets/images/profile.png";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -60,7 +60,7 @@ export default function Greeting() {
             {illustration.animated ? (
               <DisplayLottie animationData={landingPerson} />
             ) : (
-              <img alt="man sitting on table" src={manOnTableSvg}></img>
+              <img alt="profile" src={profileImage}></img>
             )}
           </div>
         </div>
