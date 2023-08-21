@@ -28,6 +28,7 @@ import {
   SiGraphql,
   SiHtml5,
   SiJavascript,
+  SiJira,
   SiKubernetes,
   SiLinux,
   SiMongodb,
@@ -147,6 +148,10 @@ https://devicon.dev/ */
     {
       skillName: "Vim",
       icon: <SiVim />
+    },
+    {
+      skillName: "Jira",
+      icon: <SiJira />
     },
     {
       skillName: "LaTeX",
