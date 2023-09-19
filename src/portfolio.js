@@ -46,7 +46,7 @@ import {
   SiVim
 } from "react-icons/si";
 
-const email = "mail@chishengliu.com";
+const email = "chishengliu@chishengliu.com";
 
 // Splash Screen
 
