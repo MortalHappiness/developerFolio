@@ -15,6 +15,7 @@ import {
   SiCloudflare,
   SiCplusplus,
   SiCss3,
+  SiDjango,
   SiDocker,
   SiElectron,
   SiExpress,
@@ -192,6 +193,10 @@ https://devicon.dev/ */
     {
       skillName: "Node.js",
       icon: <SiNodedotjs />
+    },
+    {
+      skillName: "Django",
+      icon: <SiDjango />
     },
     {
       skillName: "Flask",
