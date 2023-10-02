@@ -11,6 +11,7 @@ import {FaSass, FaDatabase, FaJava} from "react-icons/fa";
 
 import {
   SiAmazonaws,
+  SiAngular,
   SiAssemblyscript,
   SiCloudflare,
   SiCplusplus,
@@ -181,6 +182,10 @@ https://devicon.dev/ */
     {
       skillName: "React.js",
       icon: <SiReact />
+    },
+    {
+      skillName: "Angular",
+      icon: <SiAngular />
     },
     {
       skillName: "Redux",
